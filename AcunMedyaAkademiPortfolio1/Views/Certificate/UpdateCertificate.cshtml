@@ -1,0 +1,23 @@
+﻿@model AcunMedyaAkademiPortfolio1.Models.TblCertificate
+@{
+    ViewBag.Title = "UpdateCertificate";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Sertifika Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>Sertifika Id</label>
+    <input type="text" class="table table-bordered" value="@Model.CertificateID" name="CertificateID" readonly />
+    <br />
+    <label>Sertifika Başlığı</label>
+    <input type="text" class="table table-bordered" value="@Model.Title" name="Title" />
+    <label>Sertifika Görseli</label>
+    <input type="text" class="table table-bordered" value="@Model.ImageUrl" name="ImageUrl" />
+    <label>Sertifika Numarası</label>
+    <input type="text" class="table table-bordered" value="@Model.CertificateNo" name="CertificateNo" />
+    <label>Sertifika Teslim Tarihi</label>
+    <input type="text" class="table table-bordered" value="@Model.SendDate" name="SendDate" />
+    <br />
+    <button class="btn btn-success">Sertifikayı Güncelle</button>
+</form>

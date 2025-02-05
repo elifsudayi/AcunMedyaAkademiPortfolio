@@ -1,0 +1,34 @@
+﻿
+@model List<AcunMedyaAkademiPortfolio1.Models.TblTestimonial>
+<div id="testimonials" class="section wb">
+    <div class="container">
+        <div class="section-title text-left">
+            <h3>Referanslarım</h3>
+            
+        </div><!-- end title -->
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="testi-carousel owl-carousel owl-theme">
+                    @foreach (var item in Model)
+                    {
+                        <div class="testimonial clearfix">
+
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>@item.Title</h3>
+                                <p class="lead">@item.Description</p>
+                            </div>
+                            <div class="testi-meta">
+                                <img src="@item.ImageUrl" alt="" class="img-fluid alignleft">
+                                <h4>@item.NameSurname <small>@item.Job</small></h4>
+                            </div>
+
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                    }
+                    <!-- end testimonial -->
+                </div><!-- end carousel -->
+            </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->

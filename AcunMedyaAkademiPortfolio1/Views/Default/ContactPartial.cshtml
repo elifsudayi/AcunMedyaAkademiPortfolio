@@ -1,0 +1,52 @@
+﻿@model IEnumerable<AcunMedyaAkademiPortfolio1.Models.TblContact>
+<div id="contact" class="section db">
+    <div class="container">
+        <div class="section-title text-left">
+            <h3>İletişim</h3>
+            <p>İşbirliği için benimle iletişime geçebilirsiniz</p>
+        </div><!-- end title -->
+        <div class="row">
+            <div class="col-md-12">
+        
+
+                <div class="contact_form">
+                        <div id="message"></div>
+                        <form id="contactForm" name="sentMessage" novalidate="novalidate">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input class="form-conæßßætrol" id="NameSurname" type="text" placeholder="İsim" required="required" data-validation-required-message="Lütfen isminizi giriniz.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="Email" type="email" placeholder="Mail" required="required" data-validation-required-message="Lütfen mailinizi giriniz.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <input class="form-control" id="Phone" type="tel" placeholder="Telefon" required="required" data-validation-required-message="Lütfen numaranızı giriniz.">
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <textarea class="form-control" id="Message" placeholder="Mesaj" required="required" data-validation-required-message="Lütfen mesajı giriniz."></textarea>
+                                        <p class="help-block text-danger"></p>
+                                    </div>
+                                </div>
+
+
+                                <div class="clearfix"></div>
+                                <div class="col-lg-12 text-center">
+                                    <div id="success"></div>
+                                    <button id="sendMessageButton" class="sim-btn btn-hover-new" data-text="Mesaj Gönder" type="submit">Mesaj Gönder</button>
+                                </div>
+                               
+                            </div>
+                            
+                        </form>
+                    
+                 </div>                 
+                </div><!-- end col -->
+        </div><!-- end row -->
+    </div><!-- end container -->
+</div><!-- end section -->

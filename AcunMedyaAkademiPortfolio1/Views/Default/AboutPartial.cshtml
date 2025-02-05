@@ -1,0 +1,29 @@
+﻿@model List<AcunMedyaAkademiPortfolio1.Models.TblAbout>
+   
+ <div id="about" class="section wb">
+     <div class="container">
+         @foreach (var item in Model)
+         {
+             <div class="row">
+                 <div class="col-md-6">
+
+                     <div class="message-box">
+                         <h2>@item.Title</h2>
+                         <p>@item.Description</p>
+    
+                         <a href="#" class="sim-btn btn-hover-new" data-text="CV'yi İndir"><span>CV'yi İndir</span></a>
+                     </div>
+                   
+                 </div><!-- end col -->
+
+                 <div class="col-md-6">
+                     <div class="right-box-pro wow fadeIn">
+                         <img src="@item.ImageUrl" alt="" class="img-fluid img-rounded">
+                     </div>
+                     <!-- end media -->
+                 </div><!-- end col -->
+             </div>
+         }
+     <!-- end row -->
+     </div><!-- end container -->
+    </div><!-- end section -->

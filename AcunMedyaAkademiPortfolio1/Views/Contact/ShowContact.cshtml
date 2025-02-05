@@ -1,0 +1,27 @@
+﻿
+@{
+    ViewBag.Title = "ShowContact";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Mesaj Görüntüleme Sayfası</h2>
+
+<form method="post">
+    <label>İletişim Id</label>
+    <input type="text" class="table table-bordered" value="@Model.ContactID" name="ContactID" readonly />
+    <br />
+    <label>İletişim İsim/Soyisim</label>
+    <input type="text" class="table table-bordered" value="@Model.NameSurname" name="NameSurname" />
+    <label>İletişim Emaili</label>
+    <input type="text" class="table table-bordered" value="@Model.Email" name="Email" />
+    <label>İletişim Numarası</label>
+    <input type="text" class="table table-bordered" value="@Model.Phone" name="Phone" />
+    <label>Mesaj</label>
+    <textarea rows="4" class="table table-bordered" name="Message">@Model.Message</textarea>
+    <label>Mesaj Gönderim Tarihi</label>
+    <input type="text" class="table table-bordered" value="@Model.SendDate" name="SendDate" />
+    <label>Mesaj Okunma Durumu</label>
+    <input type="text" class="table table-bordered" value="@Model.IsRead" name="IsRead" />
+    <br />
+    <button class="btn btn-success">Mesajı Görüntüle</button>
+</form>

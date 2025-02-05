@@ -1,0 +1,20 @@
+﻿@model AcunMedyaAkademiPortfolio1.Models.TblProject
+@{
+    ViewBag.Title = "CreateProject";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Arşiv Ekleme Sayfası</h2>
+<form method="post"
+      <label>Arşiv Açıklaması</label>
+    <textarea rows="4" class="table table-bordered" name="Description"></textarea>
+    <br/>
+    <label>Arşiv Görseli</label>
+    <input type="text" class="table table-bordered" name="ImageUrl"/>
+    <br />
+    <label>Arşiv Kategorisi</label>
+    @Html.DropDownListFor(x=>x.CategoryID,(List<SelectListItem>)ViewBag.v, new { @class = "table table-bordered" })
+    <br />
+    <button class="btn btn-info">Arşivi Kaydet</button>
+</form>
+

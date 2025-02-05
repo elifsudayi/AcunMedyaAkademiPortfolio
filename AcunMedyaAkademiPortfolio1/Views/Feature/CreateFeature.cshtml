@@ -1,0 +1,22 @@
+﻿
+@{
+    ViewBag.Title = "CreateFeature";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Öne Çıkarılanlar Ekleme Sayfası</h2>
+<form method="post"
+    <label>Öne Çıkarılanlar İsim/Soyisim</label>
+    <input type="text" class="table table-bordered" name="NameSurname">
+    <br/>
+    <label>Öne Çıkarılanlar Açıklaması</label>
+    <input type="text" class="table table-bordered" name="Description">
+    <br/>
+    <label>Öne Çıkarılanlar Proje İsmi</label>
+    <input type="text" class="table table-bordered" name="ProjectName"/>
+    <br />
+    <label>Öne Çıkarılanlar Görseli</label>
+    <input type="text" class="table table-bordered" name="ImageUrl"/>
+    <br />
+    <button class="btn btn-info">Öne Çıkarılanları Kaydet</button>
+</form>

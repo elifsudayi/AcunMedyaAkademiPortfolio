@@ -1,0 +1,27 @@
+﻿@model AcunMedyaAkademiPortfolio1.Models.TblTestimonial
+@{
+    ViewBag.Title = "UpdateTestimonial";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Referans Güncelleme Sayfası</h2>
+
+<form method="post">
+<label>Referans Id</label>
+<input type="text" class="table table-bordered" value="@Model.TestimonialID" name="TestimonialID" readonly />
+<br />
+<label>Referans Başlığı</label>
+<input type="text" class="table table-bordered" value="@Model.Title" name="Title" />
+<label>Referans Açıklaması</label>
+<textarea rows="4" class="table table-bordered" name="Description">@Model.Description</textarea>
+<label>Referans İsim/Soyisim</label>
+<input type="text" class="table table-bordered" value="@Model.NameSurname" name="NameSurname" />
+<label>Referans Görseli</label>
+<input type="text" class="table table-bordered" value="@Model.ImageUrl" name="ImageUrl" />
+<label>Referans Mesleği</label>
+<input type="text" class="table table-bordered" value="@Model.Job" name="Job" />
+<label>Referans Durumu</label>
+<input type="text" class="table table-bordered" value="@Model.Status" name="Status" />
+<br />
+<button class="btn btn-success">Referans Güncelleme</button>
+</form>

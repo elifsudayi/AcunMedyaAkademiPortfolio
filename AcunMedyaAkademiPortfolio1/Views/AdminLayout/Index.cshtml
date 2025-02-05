@@ -1,0 +1,20 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!doctype html>
+<html lang="en">
+@Html.Action("_HeaderPartial","AdminLayout")
+<body>
+
+    <div class="wrapper d-flex align-items-stretch">
+        @Html.Action("_SidebarPartial", "AdminLayout")
+        <!-- Page Content  -->
+        <div id="content" class="p-4 p-md-5 pt-5">
+            @RenderBody()
+              </div>
+    </div>
+   @Html.Action("_ScriptsPartial","AdminLayout")
+</body>
+</html>

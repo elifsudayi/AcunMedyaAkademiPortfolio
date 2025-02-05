@@ -1,0 +1,24 @@
+﻿@model AcunMedyaAkademiPortfolio1.Models.TblFeature
+@{
+    ViewBag.Title = "UpdateFeature";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Öne Çıkanlar Güncelleme Sayfası</h2>
+    
+
+    <form method="post">
+    <label>Öneçıkarılan Id</label>
+    <input type="text" class="table table-bordered" value="@Model.FeatureID" name="FeatureID" readonly />
+    <br />
+    <label>Öneçıkarılan İsim/Soyisim</label>
+    <input type="text" class="table table-bordered" value="@Model.NameSurname" name="NameSurname" />
+    <label>Öneçıkarılan Açıklaması</label>
+<textarea rows="4" class="table table-bordered" name="Description">@Model.Description</textarea>
+    <label>Öneçıkarılan Proje İsmi</label>
+    <input type="text" class="table table-bordered" value="@Model.ProjectName" name="ProjectName" />
+    <label>Öne Çıkarılan Görseli</label>
+    <input type="text" class="table table-bordered" value="@Model.ImageUrl" name="ImageUrl" />
+    <br />
+    <button class="btn btn-success">Öne Çıkarılanı Güncelle</button>
+    </form>

@@ -1,0 +1,36 @@
+﻿@model List<AcunMedyaAkademiPortfolio1.Models.TblContact>
+@{
+    ViewBag.Title = "ContactList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Mesaj Listesi</h2>
+
+<table class="table table-bordered">
+    <tr>
+        <th>Mesaj ID</th>
+        <th>İsim/Soyisim</th>
+        <th>Email</th>
+        <th>Telefon</th>
+        <th>Mesaj Kutusu</th>
+        @*<th>Sil</th>*@
+
+    </tr>
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>@item.ContactID</td>
+            <td>@item.NameSurname</td>
+            <td>@item.Email</td>
+            <td>@item.Phone</td>
+            <td>
+                <a href="/Contact/ShowContact/@item.ContactID" class="btn btn-outline-danger">Mesajı Görüntüle</a>
+            </td>
+        </tr>
+      
+              
+        }
+
+    
+  
+</table>

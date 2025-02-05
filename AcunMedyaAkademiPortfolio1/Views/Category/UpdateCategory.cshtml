@@ -1,0 +1,17 @@
+﻿@model AcunMedyaAkademiPortfolio1.Models.TblCategory
+@{
+    ViewBag.Title = "UpdateCategory";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<h2>Kategori Güncelleme Sayfası</h2>
+
+<form method="post">
+    <label>Kategori Id</label>
+    <input type="text" class="table table-bordered" value="@Model.CategoryID" name="CategoryID" readonly />
+    <br/>
+    <label>Kategori İsmi</label>
+    <input type="text" class="table table-bordered" value="@Model.CategoryName" name="CategoryName"/>
+    <br/>
+    <button class="btn btn-success">Kategori Güncelleme</button>
+</form>
