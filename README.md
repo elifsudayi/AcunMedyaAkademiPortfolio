@@ -19,7 +19,7 @@ Admin paneli üzerinden portfolyo öğelerinin kolayca CRUD işlemlerinin yapıl
 <img width="1422" alt="Ekran Resmi 2025-02-04 15 51 21" src="https://github.com/user-attachments/assets/36916a6d-9ab5-4194-b1dc-2322ff300c6a" />
 <img width="1420" alt="Ekran Resmi 2025-02-04 15 51 53" src="https://github.com/user-attachments/assets/6c54f5b4-8544-48b9-b8a3-47f744b5274e" />
 <img width="1421" alt="Ekran Resmi 2025-02-04 15 52 34" src="https://github.com/user-attachments/assets/dd24f981-a793-47e5-9e76-74d78b10be68" />
-<img width="1420" alt="Ekran Resmi 2025-02-04 15 53 18" src="https://github.com/user-attachments/assets/6abfe9d9-9434-473c-84e6-c2ecc00fd44f" />
+<img width="1419" alt="Ekran Resmi 2025-02-05 21 25 38" src="https://github.com/user-attachments/assets/0b70b4ed-274a-447c-bc94-8ca690800d33" />
 <img width="1420" alt="Ekran Resmi 2025-02-04 15 54 28" src="https://github.com/user-attachments/assets/81a583e6-e35b-4980-af78-f4d619d02c50" />
 <img width="1422" alt="Ekran Resmi 2025-02-04 15 58 35" src="https://github.com/user-attachments/assets/9345c430-1962-4b85-b889-ef30a248bbb5" />
 <img width="1419" alt="Ekran Resmi 2025-02-04 15 57 35" src="https://github.com/user-attachments/assets/73046162-bc7b-43c7-8506-616288868e79" />
